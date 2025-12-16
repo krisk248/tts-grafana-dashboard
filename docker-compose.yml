@@ -1,0 +1,72 @@
+# TTS DIC QA Monitoring - Docker Compose
+# This is a REFERENCE file - merge into your existing ~/loki-stack/docker-compose.yml
+#
+# BACKUP FIRST:
+#   cp ~/loki-stack/docker-compose.yml ~/loki-stack/docker-compose.yml.backup
+#
+
+networks:
+  loki:
+    driver: bridge
+
+volumes:
+  loki-data:
+  grafana-data:
+  promtail-positions:
+
+services:
+  loki:
+    image: grafana/loki:2.9.3
+    container_name: loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki-config.yaml:/etc/loki/local-config.yaml
+      - loki-data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - loki
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:10.2.3
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      # ============================================
+      # NEW: Git-based provisioning volumes
+      # ============================================
+      - ./tts-grafana-dashboard/provisioning:/etc/grafana/provisioning
+      - ./tts-grafana-dashboard/dashboards:/var/lib/grafana/dashboards
+      # ============================================
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_SERVER_ROOT_URL=http://192.168.1.133:3000
+    networks:
+      - loki
+    restart: unless-stopped
+    depends_on:
+      - loki
+
+  # ============================================
+  # NEW: Promtail for Docker log collection
+  # ============================================
+  promtail:
+    image: grafana/promtail:2.9.3
+    container_name: promtail
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - ./tts-grafana-dashboard/promtail/promtail-docker.yaml:/etc/promtail/config.yml
+      - promtail-positions:/var/lib/promtail
+    command: -config.file=/etc/promtail/config.yml
+    networks:
+      - loki
+    restart: unless-stopped
+    depends_on:
+      - loki
+  # ============================================

@@ -1,0 +1,46 @@
+apiVersion: 1
+
+providers:
+  - name: 'TTS-DIC-Main'
+    orgId: 1
+    folder: 'DIC QA'
+    folderUid: 'dic-qa-folder'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 30
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards/main
+
+  - name: 'TTS-DIC-UAE'
+    orgId: 1
+    folder: 'DIC QA/UAE'
+    folderUid: 'dic-qa-uae'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 30
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards/uae
+
+  - name: 'TTS-DIC-KSA'
+    orgId: 1
+    folder: 'DIC QA/KSA'
+    folderUid: 'dic-qa-ksa'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 30
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards/ksa
+
+  - name: 'TTS-DIC-AI-Chatbot'
+    orgId: 1
+    folder: 'DIC QA/AI Chatbot'
+    folderUid: 'dic-qa-ai-chatbot'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 30
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards/ai-chatbot

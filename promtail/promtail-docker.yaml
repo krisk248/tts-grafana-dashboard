@@ -1,0 +1,79 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /var/lib/promtail/positions.yaml
+
+clients:
+  - url: http://loki:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: docker-containers
+    docker_sd_configs:
+      - host: unix:///var/run/docker.sock
+        refresh_interval: 5s
+        filters:
+          - name: name
+            values:
+              - "open-ai-.*"
+              - "prompt-faq-ui"
+    relabel_configs:
+      # Extract container name (remove leading slash)
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/(.*)'
+        target_label: container
+
+      # Extract image name
+      - source_labels: ['__meta_docker_container_image']
+        target_label: image
+
+      # Extract stack/compose project name
+      - source_labels: ['__meta_docker_container_label_com_docker_compose_project']
+        target_label: stack
+
+      # Add static labels for AI Chatbot project
+      - replacement: 'Harbor-Server'
+        target_label: machine
+
+      - replacement: 'AI-Chatbot'
+        target_label: project
+
+      - replacement: 'Docker'
+        target_label: environment
+
+      # Map container names to friendly service_type names
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/open-ai-.*-app-.*'
+        replacement: 'app'
+        target_label: service_type
+
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/open-ai-.*-worker-approved-docs.*'
+        replacement: 'worker-approved-docs'
+        target_label: service_type
+
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/open-ai-.*-worker-upload-questions.*'
+        replacement: 'worker-upload-questions'
+        target_label: service_type
+
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/open-ai-.*-postgres.*'
+        replacement: 'postgres'
+        target_label: service_type
+
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/prompt-faq-ui'
+        replacement: 'prompt-faq-ui'
+        target_label: service_type
+
+    pipeline_stages:
+      # Parse timestamp from logs if present
+      - regex:
+          expression: '^\[(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+Z)\]'
+      - timestamp:
+          source: timestamp
+          format: '2006-01-02T15:04:05.000Z'
+          fallback_formats:
+            - '2006-01-02T15:04:05Z'
