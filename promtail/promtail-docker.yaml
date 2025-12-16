@@ -9,14 +9,18 @@ clients:
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
-  - job_name: docker-containers
+  - job_name: ai-chatbot-containers
     docker_sd_configs:
       - host: unix:///var/run/docker.sock
         refresh_interval: 5s
     relabel_configs:
-      # Only keep containers matching our apps (more permissive regex)
+      # First, add the job label (required by Loki)
+      - replacement: 'ai-chatbot-docker'
+        target_label: job
+
+      # Only keep containers matching our apps
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*(open-ai|prompt-faq).*'
+        regex: '.*(open-ai-2025|prompt-faq-ui).*'
         action: keep
 
       # Extract container name (remove leading slash)
@@ -24,15 +28,7 @@ scrape_configs:
         regex: '/(.*)'
         target_label: container
 
-      # Extract image name
-      - source_labels: ['__meta_docker_container_image']
-        target_label: image
-
-      # Extract stack/compose project name
-      - source_labels: ['__meta_docker_container_label_com_docker_compose_project']
-        target_label: stack
-
-      # Add static labels for AI Chatbot project
+      # Add static labels
       - replacement: 'Harbor-Server'
         target_label: machine
 
@@ -42,34 +38,36 @@ scrape_configs:
       - replacement: 'Docker'
         target_label: environment
 
-      # Extract service name from compose service label (more reliable)
-      - source_labels: ['__meta_docker_container_label_com_docker_compose_service']
-        target_label: service_type
-
-      # Override service_type for specific containers using container name
+      # Set service_type based on container name patterns
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*(worker-approved-docs).*'
+        regex: '.*worker-approved-docs.*'
         replacement: 'worker-approved-docs'
         target_label: service_type
 
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*(worker-upload-questions).*'
+        regex: '.*worker-upload-questions.*'
         replacement: 'worker-upload-questions'
         target_label: service_type
 
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*-app-.*'
+        regex: '.*-app-[0-9]+$'
         replacement: 'app'
         target_label: service_type
 
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*-postgres-.*'
+        regex: '.*-postgres-[0-9]+$'
         replacement: 'postgres'
         target_label: service_type
 
       - source_labels: ['__meta_docker_container_name']
         regex: '.*prompt-faq-ui.*'
         replacement: 'prompt-faq-ui'
+        target_label: service_type
+
+      # Fallback: if service_type not set, use container name
+      - source_labels: ['service_type', '__meta_docker_container_name']
+        regex: '^;/(.*)'
+        replacement: '${1}'
         target_label: service_type
 
     pipeline_stages:
