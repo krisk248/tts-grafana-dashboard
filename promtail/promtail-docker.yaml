@@ -27,22 +27,8 @@ scrape_configs:
         target_label: machine
       - replacement: 'Docker'
         target_label: environment
-      # Set service_type
-      - source_labels: ['__meta_docker_container_name']
-        regex: '.*worker-approved-docs.*'
-        replacement: 'worker-approved-docs'
-        target_label: service_type
-      - source_labels: ['__meta_docker_container_name']
-        regex: '.*worker-upload-questions.*'
-        replacement: 'worker-upload-questions'
-        target_label: service_type
-      - source_labels: ['__meta_docker_container_name']
-        regex: '.*-app-[0-9]+'
-        replacement: 'app'
-        target_label: service_type
-      - source_labels: ['__meta_docker_container_name']
-        regex: '.*-postgres-[0-9]+'
-        replacement: 'postgres'
+      # Use compose service label for service_type (most reliable)
+      - source_labels: ['__meta_docker_container_label_com_docker_compose_service']
         target_label: service_type
     pipeline_stages:
       - docker: {}
