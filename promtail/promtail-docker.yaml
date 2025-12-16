@@ -9,66 +9,63 @@ clients:
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
-  - job_name: ai-chatbot-containers
+  # Scrape open-ai containers
+  - job_name: ai-chatbot-openai
     docker_sd_configs:
       - host: unix:///var/run/docker.sock
         refresh_interval: 5s
+        filters:
+          - name: name
+            values: ["open-ai-*"]
     relabel_configs:
-      # First, add the job label (required by Loki)
-      - replacement: 'ai-chatbot-docker'
-        target_label: job
-
-      # Only keep containers matching our apps
-      - source_labels: ['__meta_docker_container_name']
-        regex: '.*(open-ai-2025|prompt-faq-ui).*'
-        action: keep
-
-      # Extract container name (remove leading slash)
       - source_labels: ['__meta_docker_container_name']
         regex: '/(.*)'
         target_label: container
-
-      # Add static labels
-      - replacement: 'Harbor-Server'
-        target_label: machine
-
       - replacement: 'AI-Chatbot'
         target_label: project
-
+      - replacement: 'Harbor-Server'
+        target_label: machine
       - replacement: 'Docker'
         target_label: environment
-
-      # Set service_type based on container name patterns
+      # Set service_type
       - source_labels: ['__meta_docker_container_name']
         regex: '.*worker-approved-docs.*'
         replacement: 'worker-approved-docs'
         target_label: service_type
-
       - source_labels: ['__meta_docker_container_name']
         regex: '.*worker-upload-questions.*'
         replacement: 'worker-upload-questions'
         target_label: service_type
-
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*-app-[0-9]+$'
+        regex: '.*-app-[0-9]+'
         replacement: 'app'
         target_label: service_type
-
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*-postgres-[0-9]+$'
+        regex: '.*-postgres-[0-9]+'
         replacement: 'postgres'
         target_label: service_type
+    pipeline_stages:
+      - docker: {}
 
+  # Scrape prompt-faq-ui container
+  - job_name: ai-chatbot-ui
+    docker_sd_configs:
+      - host: unix:///var/run/docker.sock
+        refresh_interval: 5s
+        filters:
+          - name: name
+            values: ["prompt-faq-ui"]
+    relabel_configs:
       - source_labels: ['__meta_docker_container_name']
-        regex: '.*prompt-faq-ui.*'
-        replacement: 'prompt-faq-ui'
+        regex: '/(.*)'
+        target_label: container
+      - replacement: 'AI-Chatbot'
+        target_label: project
+      - replacement: 'Harbor-Server'
+        target_label: machine
+      - replacement: 'Docker'
+        target_label: environment
+      - replacement: 'prompt-faq-ui'
         target_label: service_type
-
-      # Fallback: if service_type not set, use container name
-      - source_labels: ['service_type', '__meta_docker_container_name']
-        regex: '^;/(.*)'
-        replacement: '${1}'
-        target_label: service_type
-
     pipeline_stages:
       - docker: {}
