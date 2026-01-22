@@ -1,0 +1,17 @@
+# Add this job to your UAE Promtail config file
+# Location: C:\TTS\Promtail\promtail-config.yaml (or your config file)
+# Add this under the scrape_configs section
+
+- job_name: uae-adxipo-enhancement-tomcat
+  static_configs:
+  - targets:
+    - localhost
+    labels:
+      environment: QA
+      region: UAE
+      machine: UAE-Tomcat
+      project: ADXIPO_Enhancement
+      app: ADXIPO_Enhancement
+      service_type: tomcat
+      system: Windows
+      __path__: C:\TTS\REManagement\UAE\ADX_E\Tomcat\bin\shareinfo.log
