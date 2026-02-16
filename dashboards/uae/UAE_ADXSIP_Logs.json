@@ -129,6 +129,78 @@
       ],
       "title": "ADXSIP - APPLICATION_ERROR",
       "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 36
+      },
+      "id": 4,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADXSIP\", service_type=\"bo_application\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "ADXSIP-BO - APPLICATION",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 48
+      },
+      "id": 5,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADXSIP\", service_type=\"bo_application_error\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "ADXSIP-BO - APPLICATION_ERROR",
+      "type": "logs"
     }
   ],
   "refresh": "5s",

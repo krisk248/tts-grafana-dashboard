@@ -1,0 +1,30 @@
+# ADXSIP Backoffice Promtail Config Snippet
+# Add these scrape_configs to the UAE-Linux-SIP server's Promtail config
+# Path: /opt/promtail/promtail-config.yaml (on the server)
+
+  - job_name: uae-adxsip-bo-application
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: UAE-Linux-SIP
+          project: ADXSIP
+          app: ADXSIP-BO
+          service_type: bo_application
+          system: Linux
+          __path__: /TTS/REManagement/UAE/SIP-NEW/Tomcat-9993/logs/logs/bo-application.log
+  - job_name: uae-adxsip-bo-application-error
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: UAE-Linux-SIP
+          project: ADXSIP
+          app: ADXSIP-BO
+          service_type: bo_application_error
+          system: Linux
+          __path__: /TTS/REManagement/UAE/SIP-NEW/Tomcat-9993/logs/logs/bo-applicationError.log
