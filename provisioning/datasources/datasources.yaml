@@ -10,3 +10,13 @@ datasources:
     editable: true
     jsonData:
       maxLines: 1000
+
+  - name: Loki-Qatar
+    type: loki
+    uid: loki-qatar
+    access: proxy
+    url: http://192.168.1.100:3100
+    isDefault: false
+    editable: true
+    jsonData:
+      maxLines: 1000
