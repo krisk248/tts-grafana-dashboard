@@ -25,7 +25,7 @@
     {
       "datasource": {
         "type": "loki",
-        "uid": "loki-qatar"
+        "uid": "loki-uae-tomcats"
       },
       "gridPos": {
         "h": 8,
@@ -49,7 +49,7 @@
         {
           "datasource": {
             "type": "loki",
-            "uid": "loki-qatar"
+            "uid": "loki-uae-tomcats"
           },
           "expr": "{project=\"IPO-MIGRATION\", service_type=\"tomcat\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
@@ -61,7 +61,7 @@
     {
       "datasource": {
         "type": "loki",
-        "uid": "loki-qatar"
+        "uid": "loki-uae-tomcats"
       },
       "gridPos": {
         "h": 8,
@@ -85,7 +85,7 @@
         {
           "datasource": {
             "type": "loki",
-            "uid": "loki-qatar"
+            "uid": "loki-uae-tomcats"
           },
           "expr": "{project=\"IPO-MIGRATION\", service_type=\"Shareholder process\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
@@ -97,7 +97,7 @@
     {
       "datasource": {
         "type": "loki",
-        "uid": "loki-qatar"
+        "uid": "loki-uae-tomcats"
       },
       "gridPos": {
         "h": 8,
@@ -121,7 +121,7 @@
         {
           "datasource": {
             "type": "loki",
-            "uid": "loki-qatar"
+            "uid": "loki-uae-tomcats"
           },
           "expr": "{project=\"IPO-MIGRATION\", service_type=\"Email Process\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
@@ -133,7 +133,7 @@
     {
       "datasource": {
         "type": "loki",
-        "uid": "loki-qatar"
+        "uid": "loki-uae-tomcats"
       },
       "gridPos": {
         "h": 8,
@@ -157,7 +157,7 @@
         {
           "datasource": {
             "type": "loki",
-            "uid": "loki-qatar"
+            "uid": "loki-uae-tomcats"
           },
           "expr": "{project=\"IPO-MIGRATION\", service_type=\"OfferEmailProcess\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
@@ -169,7 +169,7 @@
     {
       "datasource": {
         "type": "loki",
-        "uid": "loki-qatar"
+        "uid": "loki-uae-tomcats"
       },
       "gridPos": {
         "h": 8,
@@ -193,7 +193,7 @@
         {
           "datasource": {
             "type": "loki",
-            "uid": "loki-qatar"
+            "uid": "loki-uae-tomcats"
           },
           "expr": "{project=\"IPO-MIGRATION\", service_type=\"OfferEmailSendBatch\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
@@ -205,7 +205,7 @@
     {
       "datasource": {
         "type": "loki",
-        "uid": "loki-qatar"
+        "uid": "loki-uae-tomcats"
       },
       "gridPos": {
         "h": 8,
@@ -229,7 +229,7 @@
         {
           "datasource": {
             "type": "loki",
-            "uid": "loki-qatar"
+            "uid": "loki-uae-tomcats"
           },
           "expr": "{project=\"IPO-MIGRATION\", service_type=\"Offer Process Listener\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
@@ -241,7 +241,7 @@
     {
       "datasource": {
         "type": "loki",
-        "uid": "loki-qatar"
+        "uid": "loki-uae-tomcats"
       },
       "gridPos": {
         "h": 8,
@@ -265,7 +265,7 @@
         {
           "datasource": {
             "type": "loki",
-            "uid": "loki-qatar"
+            "uid": "loki-uae-tomcats"
           },
           "expr": "{project=\"IPO-MIGRATION\", service_type=\"Scripts\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
