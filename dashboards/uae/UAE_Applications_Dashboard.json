@@ -14,7 +14,7 @@
       "keepTime": false,
       "tags": [],
       "targetBlank": false,
-      "title": "\u2190 Back to Main Dashboard",
+      "title": "← Back to Main Dashboard",
       "tooltip": "",
       "type": "link",
       "url": "/d/dic-qa-main/dic-qa-dashboard"
@@ -36,7 +36,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADIB</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">3 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adib-logs/adib-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat \u2022 Dividend File Process \u2022 Notification process\n  </p>\n</div>",
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">Registry Migration</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">5 Projects</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-registry-migration-hub/uae-registry-migration\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    Open Group →\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    IPO-MIGRATION • MBANK • RUYA-BANK • +2 more\n  </p>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "10.2.3",
@@ -58,7 +58,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXIPO</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">4 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxipo-logs/adxipo-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat \u2022 Email Sender \u2022 Offer Process Listener \u2022 +1 more\n  </p>\n</div>",
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXIPO</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">6 Environments</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxipo-hub/uae-adxipo\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    Open Group →\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    ADX • ADX_AIBAN • ADX_E • ADX_TAMM • +2 more\n  </p>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "10.2.3",
@@ -80,7 +80,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">DFM</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">4 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-dfm-logs/dfm-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat \u2022 Meeting Process \u2022 Notification \u2022 +1 more\n  </p>\n</div>",
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">DFM</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">4 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-dfm-logs/dfm-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs →\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat • Meeting Process • Notification • +1 more\n  </p>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "10.2.3",
@@ -102,7 +102,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">IPO-MIGRATION</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">6 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-ipo-migration-logs/ipo-migration-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat \u2022 Email Process \u2022 Offer Process Listener \u2022 +3 more\n  </p>\n</div>",
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXSIP</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">3 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxsip-logs/adxsip-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs →\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    Notification process • application • application_error\n  </p>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "10.2.3",
@@ -124,7 +124,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">MBANK</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">5 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-mbank-logs/mbank-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat \u2022 Offer Process Listener \u2022 Offer Recon Listener \u2022 +2 more\n  </p>\n</div>",
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">TABADUL</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">4 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-tabadul-logs/tabadul-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs →\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat • Load Broker List • Shareinfo Job • +1 more\n  </p>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "10.2.3",
@@ -146,139 +146,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">RUYA-BANK</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">5 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-ruya-bank-logs/ruya-bank-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat \u2022 Offer Process Listener \u2022 Offer Recon Listener \u2022 +2 more\n  </p>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "10.2.3",
-      "title": "",
-      "type": "text",
-      "transparent": true
-    },
-    {
-      "gridPos": {
-        "h": 6,
-        "w": 6,
-        "x": 12,
-        "y": 6
-      },
-      "id": 7,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXSIP</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">3 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxsip-logs/adxsip-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    Notification process \u2022 application \u2022 application_error\n  </p>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "10.2.3",
-      "title": "",
-      "type": "text",
-      "transparent": true
-    },
-    {
-      "gridPos": {
-        "h": 6,
-        "w": 6,
-        "x": 18,
-        "y": 6
-      },
-      "id": 8,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXIPO Enhancement</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">1 Service Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxipo-enhancement-logs/adxipo-enhancement-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat\n  </p>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "10.2.3",
-      "title": "",
-      "type": "text",
-      "transparent": true
-    },
-    {
-      "gridPos": {
-        "h": 6,
-        "w": 6,
-        "x": 0,
-        "y": 12
-      },
-      "id": 9,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">TABADUL</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">4 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-tabadul-logs/tabadul-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat \u2022 Load Broker List \u2022 Shareinfo Job \u2022 +1 more\n  </p>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "10.2.3",
-      "title": "",
-      "type": "text",
-      "transparent": true
-    },
-    {
-      "gridPos": {
-        "h": 6,
-        "w": 6,
-        "x": 6,
-        "y": 12
-      },
-      "id": 10,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXAIBAN</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">1 Service Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxaiban-logs/adxaiban-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat\n  </p>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "10.2.3",
-      "title": "",
-      "type": "text",
-      "transparent": true
-    },
-    {
-      "gridPos": {
-        "h": 6,
-        "w": 6,
-        "x": 12,
-        "y": 12
-      },
-      "id": 11,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXIPOAPI</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">1 Service Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxipoapi-logs/adxipoapi-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    tomcat\n  </p>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "10.2.3",
-      "title": "",
-      "type": "text",
-      "transparent": true
-    },
-    {
-      "gridPos": {
-        "h": 6,
-        "w": 6,
-        "x": 18,
-        "y": 12
-      },
-      "id": 12,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">MOCK</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">Services TBD</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-mock-logs/mock-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    placeholder\n  </p>\n</div>",
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">MOCK</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">Services TBD</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-mock-logs/mock-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs →\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    placeholder\n  </p>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "10.2.3",

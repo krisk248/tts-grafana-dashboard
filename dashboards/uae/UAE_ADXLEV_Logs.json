@@ -14,10 +14,10 @@
       "keepTime": false,
       "tags": [],
       "targetBlank": false,
-      "title": "\u2190 Back to UAE Applications",
+      "title": "← Back to ADXIPO",
       "tooltip": "",
       "type": "link",
-      "url": "/d/uae-apps/uae-applications"
+      "url": "/d/uae-adxipo-hub/uae-adxipo"
     }
   ],
   "liveNow": true,
@@ -51,11 +51,11 @@
             "type": "loki",
             "uid": "loki-uae-tomcats"
           },
-          "expr": "{project=\"ADXIPOAPI\", service_type=\"tomcat\"} |~ \"$log_level\" |= \"$search_text\"",
+          "expr": "{project=\"ADXLEV\", service_type=\"tomcat\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
         }
       ],
-      "title": "ADXIPOAPI - TOMCAT",
+      "title": "ADXLEV - TOMCAT",
       "type": "logs"
     }
   ],
@@ -67,7 +67,7 @@
     "DIC",
     "QA",
     "UAE",
-    "ADXIPOAPI"
+    "ADXLEV"
   ],
   "templating": {
     "list": [
@@ -139,7 +139,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "TTS DIC QA - ADXIPOAPI Logs",
-  "uid": "uae-adxipoapi-logs",
+  "title": "TTS DIC QA - ADXLEV Logs",
+  "uid": "uae-adxlev-logs",
   "version": 0
 }
