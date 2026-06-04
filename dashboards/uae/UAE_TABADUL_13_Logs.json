@@ -14,7 +14,7 @@
       "keepTime": false,
       "tags": [],
       "targetBlank": false,
-      "title": "\u2190 Back to UAE TABADUL",
+      "title": "← Back to UAE TABADUL",
       "tooltip": "",
       "type": "link",
       "url": "/d/uae-tabadul-hub/tabadul"
@@ -51,11 +51,11 @@
             "type": "loki",
             "uid": "loki-uae-tomcats"
           },
-          "expr": "{project=\"TABADUL\", service_type=\"tomcat\"} |~ \"$log_level\" |= \"$search_text\"",
+          "expr": "{project=\"TABADUL_13\", service_type=\"tomcat\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
         }
       ],
-      "title": "TABADUL - TOMCAT",
+      "title": "TABADUL 1.3 - TOMCAT",
       "type": "logs"
     },
     {
@@ -87,11 +87,11 @@
             "type": "loki",
             "uid": "loki-uae-tomcats"
           },
-          "expr": "{project=\"TABADUL\", service_type=\"load_broker_list\"} |~ \"$log_level\" |= \"$search_text\"",
+          "expr": "{project=\"TABADUL_13\", service_type=\"load_broker_list\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
         }
       ],
-      "title": "TABADUL - LOAD BROKER LIST",
+      "title": "TABADUL 1.3 - LOAD BROKER LIST",
       "type": "logs"
     },
     {
@@ -123,11 +123,11 @@
             "type": "loki",
             "uid": "loki-uae-tomcats"
           },
-          "expr": "{project=\"TABADUL\", service_type=\"shareinfo_job\"} |~ \"$log_level\" |= \"$search_text\"",
+          "expr": "{project=\"TABADUL_13\", service_type=\"shareinfo_job\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
         }
       ],
-      "title": "TABADUL - SHAREINFO JOB",
+      "title": "TABADUL 1.3 - SHAREINFO JOB",
       "type": "logs"
     },
     {
@@ -159,11 +159,11 @@
             "type": "loki",
             "uid": "loki-uae-tomcats"
           },
-          "expr": "{project=\"TABADUL\", service_type=\"offer_process_listener\"} |~ \"$log_level\" |= \"$search_text\"",
+          "expr": "{project=\"TABADUL_13\", service_type=\"offer_process_listener\"} |~ \"$log_level\" |= \"$search_text\"",
           "refId": "A"
         }
       ],
-      "title": "TABADUL - OFFER PROCESS LISTENER",
+      "title": "TABADUL 1.3 - OFFER PROCESS LISTENER",
       "type": "logs"
     }
   ],
@@ -247,7 +247,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "TTS DIC QA - TABADUL Logs",
-  "uid": "uae-tabadul-logs",
+  "title": "TTS DIC QA - TABADUL 1.3 Logs",
+  "uid": "uae-tabadul-13-logs",
   "version": 0
 }
