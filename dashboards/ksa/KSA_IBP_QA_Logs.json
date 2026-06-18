@@ -28,7 +28,7 @@
         "uid": "loki-uae-tomcats"
       },
       "gridPos": {
-        "h": 24,
+        "h": 12,
         "w": 24,
         "x": 0,
         "y": 0
@@ -56,6 +56,42 @@
         }
       ],
       "title": "IBP QA - TOMCAT",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 12
+      },
+      "id": 2,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"imsmailer\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - IMS MAILER (NOTIFICATION)",
       "type": "logs"
     }
   ],
