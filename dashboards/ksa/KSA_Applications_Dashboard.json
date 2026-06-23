@@ -153,6 +153,28 @@
       "title": "",
       "type": "text",
       "transparent": true
+    },
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 12,
+        "y": 6
+      },
+      "id": 7,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">IBPIS</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">3 Environments</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/ksa-ibpis-hub/ibpis\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs →\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    BR-HUB • WithoutTrillex • WithTrillex\n  </p>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "10.2.3",
+      "title": "",
+      "type": "text",
+      "transparent": true
     }
   ],
   "refresh": "",
