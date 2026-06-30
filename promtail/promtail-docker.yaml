@@ -55,3 +55,161 @@ scrape_configs:
         target_label: service_type
     pipeline_stages:
       - docker: {}
+
+  # ===== ADX_SSP_NODE_2 (Harbor host files, mounted at /var/log/adx-ssp) =====
+  - job_name: uae-adx-ssp-node2-ssp-processor
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: ssp-processor
+          system: Linux
+          __path__: /var/log/adx-ssp/ssp-processor.log
+  - job_name: uae-adx-ssp-node2-adminnotificationsenderjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: AdminNotificationSenderJob
+          system: Linux
+          __path__: /var/log/adx-ssp/AdminNotificationSenderJob.log
+  - job_name: uae-adx-ssp-node2-checkandresetddaregistrationstatusprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: CheckAndResetDDARegistrationStatusProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/CheckAndResetDDARegistrationStatusProcessorJob.log
+  - job_name: uae-adx-ssp-node2-ddapaymentprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: DDAPaymentProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/DDAPaymentProcessorJob.log
+  - job_name: uae-adx-ssp-node2-ddapaymentstatusprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: DDAPaymentStatusProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/DDAPaymentStatusProcessorJob.log
+  - job_name: uae-adx-ssp-node2-ddaregistrationprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: DDARegistrationProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/DDARegistrationProcessorJob.log
+  - job_name: uae-adx-ssp-node2-ipipaymentrequestprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: IPIPaymentRequestProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/IPIPaymentRequestProcessorJob.log
+  - job_name: uae-adx-ssp-node2-ipipaymentstatusprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: IPIPaymentStatusProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/IPIPaymentStatusProcessorJob.log
+  - job_name: uae-adx-ssp-node2-loadbrokerdatajob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: LoadBrokerDataJob
+          system: Linux
+          __path__: /var/log/adx-ssp/LoadBrokerDataJob.log
+  - job_name: uae-adx-ssp-node2-loadinavfeeddatajob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: LoadINAVFeedDataJob
+          system: Linux
+          __path__: /var/log/adx-ssp/LoadINAVFeedDataJob.log
+  - job_name: uae-adx-ssp-node2-notificationsenderjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: NotificationSenderJob
+          system: Linux
+          __path__: /var/log/adx-ssp/NotificationSenderJob.log
+  - job_name: uae-adx-ssp-node2-paymentremindernotificationprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: PaymentReminderNotificationProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/PaymentReminderNotificationProcessorJob.log

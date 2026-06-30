@@ -1,0 +1,541 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": false,
+      "title": "\u2190 Back to UAE ADX SSP",
+      "tooltip": "",
+      "type": "link",
+      "url": "/d/uae-adx-ssp-hub/adx-ssp"
+    }
+  ],
+  "liveNow": true,
+  "panels": [
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"ssp-processor\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - SSP-PROCESSOR",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 8
+      },
+      "id": 2,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"AdminNotificationSenderJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - ADMINNOTIFICATIONSENDERJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 16
+      },
+      "id": 3,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"CheckAndResetDDARegistrationStatusProcessorJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - CHECKANDRESETDDAREGISTRATIONSTATUSPROCESSORJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "id": 4,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"DDAPaymentProcessorJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - DDAPAYMENTPROCESSORJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 32
+      },
+      "id": 5,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"DDAPaymentStatusProcessorJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - DDAPAYMENTSTATUSPROCESSORJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 40
+      },
+      "id": 6,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"DDARegistrationProcessorJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - DDAREGISTRATIONPROCESSORJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 48
+      },
+      "id": 7,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"IPIPaymentRequestProcessorJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - IPIPAYMENTREQUESTPROCESSORJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 56
+      },
+      "id": 8,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"IPIPaymentStatusProcessorJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - IPIPAYMENTSTATUSPROCESSORJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 64
+      },
+      "id": 9,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"LoadBrokerDataJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - LOADBROKERDATAJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 72
+      },
+      "id": 10,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"LoadINAVFeedDataJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - LOADINAVFEEDDATAJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 80
+      },
+      "id": 11,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"NotificationSenderJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - NOTIFICATIONSENDERJOB",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 88
+      },
+      "id": 12,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"ADX_SSP_NODE_1\", service_type=\"PaymentReminderNotificationProcessorJob\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "SSP N1 - PAYMENTREMINDERNOTIFICATIONPROCESSORJOB",
+      "type": "logs"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [
+    "TTS",
+    "DIC",
+    "QA",
+    "UAE",
+    "ADX_SSP"
+  ],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "text": "All",
+          "value": ".*"
+        },
+        "description": "Filter logs by level",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Log Level",
+        "multi": false,
+        "name": "log_level",
+        "options": [
+          {
+            "selected": true,
+            "text": "All",
+            "value": ".*"
+          },
+          {
+            "selected": false,
+            "text": "ERROR",
+            "value": "ERROR"
+          },
+          {
+            "selected": false,
+            "text": "WARN",
+            "value": "WARN"
+          },
+          {
+            "selected": false,
+            "text": "INFO",
+            "value": "INFO"
+          }
+        ],
+        "query": "All : .*, ERROR : ERROR, WARN : WARN, INFO : INFO",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "",
+          "value": ""
+        },
+        "description": "Search for specific text (user ID, error message, etc.)",
+        "hide": 0,
+        "label": "Search Text",
+        "name": "search_text",
+        "options": [
+          {
+            "selected": true,
+            "text": "",
+            "value": ""
+          }
+        ],
+        "query": "",
+        "skipUrlSync": false,
+        "type": "textbox"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "TTS DIC QA - ADX SSP Node 1 Logs",
+  "uid": "uae-adx-ssp-node1-logs",
+  "version": 0
+}

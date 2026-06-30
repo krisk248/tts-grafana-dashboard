@@ -1,0 +1,114 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": false,
+      "title": "\u2190 Back to UAE Applications",
+      "tooltip": "",
+      "type": "link",
+      "url": "/d/uae-apps/uae-applications"
+    }
+  ],
+  "liveNow": false,
+  "panels": [
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADXSIP</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">3 Services Running</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adxsip-logs/adxsip-logs\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    Notification process \u2022 application \u2022 application_error\n  </p>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "10.2.3",
+      "title": "",
+      "type": "text",
+      "transparent": true
+    },
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADX_SSP_NODE_1</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">12 Services \u2022 ttsqaserver</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adx-ssp-node1-logs/adx-ssp-node-1\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    ssp-processor \u2022 11 processor jobs\n  </p>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "10.2.3",
+      "title": "",
+      "type": "text",
+      "transparent": true
+    },
+    {
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"padding: 10px; height: 100%; display: flex; flex-direction: column;\">\n  <h2 style=\"margin-top: 0; margin-bottom: 5px; font-size: 20px;\">ADX_SSP_NODE_2</h2>\n  <p style=\"font-size: 14px; color: #999; margin: 0 0 15px 0;\">12 Services \u2022 Harbor</p>\n  <hr style=\"border: none; border-top: 1px solid #333; margin: 10px 0;\">\n\n  <a href=\"/d/uae-adx-ssp-node2-logs/adx-ssp-node-2\"\n     style=\"display: block;\n            padding: 25px 20px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            text-decoration: none;\n            border-radius: 8px;\n            text-align: center;\n            font-size: 18px;\n            font-weight: 600;\n            margin: auto 0;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.3);\">\n    View Logs \u2192\n  </a>\n\n  <p style=\"font-size: 11px; color: #666; margin-top: 15px; text-align: center; line-height: 1.4;\">\n    ssp-processor \u2022 11 processor jobs\n  </p>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "10.2.3",
+      "title": "",
+      "type": "text",
+      "transparent": true
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [
+    "TTS",
+    "DIC",
+    "QA",
+    "UAE",
+    "ADX_SSP"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "TTS DIC QA - UAE ADX SSP",
+  "uid": "uae-adx-ssp-hub",
+  "version": 0
+}

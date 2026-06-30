@@ -14,10 +14,10 @@
       "keepTime": false,
       "tags": [],
       "targetBlank": false,
-      "title": "\u2190 Back to UAE Applications",
+      "title": "\u2190 Back to UAE ADX SSP",
       "tooltip": "",
       "type": "link",
-      "url": "/d/uae-apps/uae-applications"
+      "url": "/d/uae-adx-ssp-hub/adx-ssp"
     }
   ],
   "liveNow": true,
