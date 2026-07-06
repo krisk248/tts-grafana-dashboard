@@ -213,3 +213,59 @@ scrape_configs:
           service_type: PaymentReminderNotificationProcessorJob
           system: Linux
           __path__: /var/log/adx-ssp/PaymentReminderNotificationProcessorJob.log
+
+  - job_name: uae-adx-ssp-node2-brokerintegrationprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: BrokerIntegrationProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/BrokerIntegrationProcessorJob.log
+
+  - job_name: uae-adx-ssp-node2-offlinereportprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: OfflineReportProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/OfflineReportProcessorJob.log
+
+  - job_name: uae-adx-ssp-node2-sipcreationnotificationprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: SIPCreationNotificationProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/SIPCreationNotificationProcessorJob.log
+
+  - job_name: uae-adx-ssp-node2-tradeexecutionfileprocessorjob
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          environment: QA
+          region: UAE
+          machine: Harbor-Server
+          project: ADX_SSP_NODE_2
+          app: ADX_SSP_NODE_2
+          service_type: TradeExecutionFileProcessorJob
+          system: Linux
+          __path__: /var/log/adx-ssp/TradeExecutionFileProcessorJob.log
