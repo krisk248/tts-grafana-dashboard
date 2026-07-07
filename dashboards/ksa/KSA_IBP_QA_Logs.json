@@ -93,6 +93,366 @@
       ],
       "title": "IBP QA - IMS MAILER (NOTIFICATION)",
       "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "id": 3,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"BulkProcessor\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - BULKPROCESSOR",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 36
+      },
+      "id": 4,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"Directupload\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - DIRECTUPLOAD",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 48
+      },
+      "id": 5,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"ExplicitProcessor\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - EXPLICITPROCESSOR",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 60
+      },
+      "id": 6,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"FileSecurityMockScanner\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - FILESECURITYMOCKSCANNER",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 72
+      },
+      "id": 7,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"FileSecurityScanWatcher\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - FILESECURITYSCANWATCHER",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 84
+      },
+      "id": 8,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"Notifications\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - NOTIFICATIONS",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 96
+      },
+      "id": 9,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"OnlineDARGenerator\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - ONLINEDARGENERATOR",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 108
+      },
+      "id": 10,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"PaymentRecon\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - PAYMENTRECON",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 120
+      },
+      "id": 11,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"Preload\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - PRELOAD",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 132
+      },
+      "id": 12,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_QA\", service_type=\"Refund\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP QA - REFUND",
+      "type": "logs"
     }
   ],
   "refresh": "5s",
