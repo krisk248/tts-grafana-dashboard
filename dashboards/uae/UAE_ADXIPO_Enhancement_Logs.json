@@ -55,7 +55,7 @@
           "refId": "A"
         }
       ],
-      "title": "ADXIPO Enhancement - TOMCAT",
+      "title": "ADX_DDS - TOMCAT",
       "type": "logs"
     }
   ],
@@ -67,7 +67,7 @@
     "DIC",
     "QA",
     "UAE",
-    "ADXIPO_Enhancement"
+    "ADX_DDS"
   ],
   "templating": {
     "list": [
@@ -139,7 +139,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "TTS DIC QA - ADXIPO Enhancement Logs",
+  "title": "TTS DIC QA - ADX_DDS Logs",
   "uid": "uae-adxipo-enhancement-logs",
   "version": 0
 }
