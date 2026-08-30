@@ -69,42 +69,6 @@
         "x": 0,
         "y": 12
       },
-      "id": 3,
-      "options": {
-        "dedupStrategy": "none",
-        "enableLogDetails": true,
-        "prettifyLogMessage": false,
-        "showCommonLabels": false,
-        "showLabels": false,
-        "showTime": true,
-        "sortOrder": "Ascending",
-        "wrapLogMessage": true
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "loki",
-            "uid": "loki-uae-tomcats"
-          },
-          "expr": "{project=\"IBP_DEV\", service_type=\"BulkProcessor\"} |~ \"$log_level\" |= \"$search_text\"",
-          "refId": "A"
-        }
-      ],
-      "title": "IBP DEV - BULKPROCESSOR",
-      "type": "logs"
-    },
-    {
-      "datasource": {
-        "type": "loki",
-        "uid": "loki-uae-tomcats"
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 24,
-        "x": 0,
-        "y": 24
-      },
       "id": 4,
       "options": {
         "dedupStrategy": "none",
@@ -139,7 +103,7 @@
         "h": 12,
         "w": 24,
         "x": 0,
-        "y": 36
+        "y": 24
       },
       "id": 5,
       "options": {
@@ -175,7 +139,7 @@
         "h": 12,
         "w": 24,
         "x": 0,
-        "y": 48
+        "y": 36
       },
       "id": 6,
       "options": {
@@ -211,7 +175,7 @@
         "h": 12,
         "w": 24,
         "x": 0,
-        "y": 60
+        "y": 48
       },
       "id": 7,
       "options": {
@@ -247,43 +211,7 @@
         "h": 12,
         "w": 24,
         "x": 0,
-        "y": 72
-      },
-      "id": 8,
-      "options": {
-        "dedupStrategy": "none",
-        "enableLogDetails": true,
-        "prettifyLogMessage": false,
-        "showCommonLabels": false,
-        "showLabels": false,
-        "showTime": true,
-        "sortOrder": "Ascending",
-        "wrapLogMessage": true
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "loki",
-            "uid": "loki-uae-tomcats"
-          },
-          "expr": "{project=\"IBP_DEV\", service_type=\"Notifications\"} |~ \"$log_level\" |= \"$search_text\"",
-          "refId": "A"
-        }
-      ],
-      "title": "IBP DEV - NOTIFICATIONS",
-      "type": "logs"
-    },
-    {
-      "datasource": {
-        "type": "loki",
-        "uid": "loki-uae-tomcats"
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 24,
-        "x": 0,
-        "y": 84
+        "y": 60
       },
       "id": 9,
       "options": {
@@ -319,79 +247,7 @@
         "h": 12,
         "w": 24,
         "x": 0,
-        "y": 96
-      },
-      "id": 10,
-      "options": {
-        "dedupStrategy": "none",
-        "enableLogDetails": true,
-        "prettifyLogMessage": false,
-        "showCommonLabels": false,
-        "showLabels": false,
-        "showTime": true,
-        "sortOrder": "Ascending",
-        "wrapLogMessage": true
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "loki",
-            "uid": "loki-uae-tomcats"
-          },
-          "expr": "{project=\"IBP_DEV\", service_type=\"PaymentRecon\"} |~ \"$log_level\" |= \"$search_text\"",
-          "refId": "A"
-        }
-      ],
-      "title": "IBP DEV - PAYMENTRECON",
-      "type": "logs"
-    },
-    {
-      "datasource": {
-        "type": "loki",
-        "uid": "loki-uae-tomcats"
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 24,
-        "x": 0,
-        "y": 108
-      },
-      "id": 11,
-      "options": {
-        "dedupStrategy": "none",
-        "enableLogDetails": true,
-        "prettifyLogMessage": false,
-        "showCommonLabels": false,
-        "showLabels": false,
-        "showTime": true,
-        "sortOrder": "Ascending",
-        "wrapLogMessage": true
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "loki",
-            "uid": "loki-uae-tomcats"
-          },
-          "expr": "{project=\"IBP_DEV\", service_type=\"Preload\"} |~ \"$log_level\" |= \"$search_text\"",
-          "refId": "A"
-        }
-      ],
-      "title": "IBP DEV - PRELOAD",
-      "type": "logs"
-    },
-    {
-      "datasource": {
-        "type": "loki",
-        "uid": "loki-uae-tomcats"
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 24,
-        "x": 0,
-        "y": 120
+        "y": 72
       },
       "id": 12,
       "options": {
@@ -427,7 +283,7 @@
         "h": 12,
         "w": 24,
         "x": 0,
-        "y": 132
+        "y": 84
       },
       "id": 13,
       "options": {
@@ -463,7 +319,7 @@
         "h": 12,
         "w": 24,
         "x": 0,
-        "y": 144
+        "y": 96
       },
       "id": 14,
       "options": {
@@ -488,6 +344,114 @@
         }
       ],
       "title": "IBP DEV - EDAAMAINPROCESS",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 108
+      },
+      "id": 15,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_DEV\", service_type=\"BGMessageProcessor\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP DEV - BGMESSAGEPROCESSOR",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 120
+      },
+      "id": 16,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_DEV\", service_type=\"BackgroundThreadProcessor\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP DEV - BACKGROUNDTHREADPROCESSOR",
+      "type": "logs"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "loki-uae-tomcats"
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 132
+      },
+      "id": 17,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Ascending",
+        "wrapLogMessage": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "loki-uae-tomcats"
+          },
+          "expr": "{project=\"IBP_DEV\", service_type=\"NotificationMessageProcessor\"} |~ \"$log_level\" |= \"$search_text\"",
+          "refId": "A"
+        }
+      ],
+      "title": "IBP DEV - NOTIFICATIONMESSAGEPROCESSOR",
       "type": "logs"
     }
   ],
